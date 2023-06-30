@@ -1,54 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap');
 
-* {
-    font-family: 'Outfit';
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
 }
 
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Outfit';
+}
 
 body {
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-.white-box {
-    height: auto;
-    max-width: 320px;
-    margin: 40px auto 40px auto;
-    background-color: hsl(0, 0%, 100%);
+main {
+    width: 19em;
+    height: 30em;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
-    
     border-radius: 15px;
+    gap: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.1) ;
 }
-
-img {
-    border-radius: 10px;
-    width: 290px; 
-    height: auto;
-    object-fit: cover;
-    margin-top: 15px;
   
-}
-
-.image {
-    margin: auto;
+.qrCode {
+    border-radius: 10px;
+    margin: 15px;
+    margin-bottom: 9px;
 }
 
 .text {
-  
-    margin: auto;
     margin: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 0px;
     text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.74rem;
+    color: var(--dark-blue);
 }
 
 p{
     margin-top: 15px;
-    font-size: 15px;
     font-weight: 400;
-    color: hsl(220, 15%, 55%);
+    color: var(--grayish-blue);
+    font-size: 15px;
 } 
-
-h2{
-    font-weight: 700;
-}
