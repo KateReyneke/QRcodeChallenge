@@ -59,12 +59,14 @@ p{
 } 
 
 .credits {
+    text-align: center;
     position: absolute;
     bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 0.735rem;
 }
 
 .credits, p{
-    text-align: center;
     color: var(--grayish-blue);
 }
 
