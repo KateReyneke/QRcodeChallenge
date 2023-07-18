@@ -61,14 +61,11 @@ p{
 .credits {
     position: absolute;
     bottom: 0;
-    margin-bottom: 10px;
 }
 
 .credits, p{
     text-align: center;
     color: var(--grayish-blue);
-    
-
 }
 
 .credits, a {
