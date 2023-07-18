@@ -22,8 +22,8 @@ body {
 }
 
 main {
-    width: 19em;
-    height: 30em;
+    width: 20em;
+    height: 31em;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -55,5 +55,17 @@ p{
     margin-top: 15px;
     font-weight: 400;
     color: var(--grayish-blue);
-    font-size: 15px;
+    font-size: 16px;
 } 
+
+.credits, p{
+    text-align: center;
+    color: var(--grayish-blue);
+    
+
+}
+
+.credits, a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
